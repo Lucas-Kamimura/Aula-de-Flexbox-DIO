@@ -14,6 +14,15 @@
         max-width: 300px;
       }
 
+      .flex-container-column {
+        display: flex;
+        height: 150px;
+        border: 2px solid black;
+        max-width: 300px;
+        flex-direction: column;
+        min-height: 100px;
+      }
+
       .item {
         font-size: 24px;
         height: 50%;
@@ -49,6 +58,14 @@
       .purple {
         background-color: purple;
       }
+
+      .gold {
+        background-color: goldenrod;
+      }
+
+      .pink {
+        background-color: pink;
+      }
     </style>
   </head>
   <body>
@@ -63,7 +80,7 @@
 
     <h1>wrap</h1>
 
-    <div class="flex-container wrap">
+    <div class="flex-container-column wrap">
       <div class="item green">1</div>
       <div class="item blue">2</div>
       <div class="item orange">3</div>
@@ -77,6 +94,8 @@
       <div class="item blue">2</div>
       <div class="item orange">3</div>
       <div class="item purple">4</div>
+      <div class="item gold">5</div>
+      <div class="item pink">6</div>
     </div>
   </body>
 </html>
